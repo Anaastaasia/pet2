@@ -460,7 +460,9 @@ main {
 }
 
 .second {
+    position: relative;
     overflow-x: hidden;
+    
 
 }
 
@@ -543,7 +545,6 @@ main {
         transform: translate3d(-100%, 0, 0);
     }
 }
-
 
 
 
