@@ -463,7 +463,8 @@ main {
 .second {
     position: relative;
     overflow-x: hidden;
-
+    margin-top: 100px;
+    margin-bottom: 100px;
 
 }
 
@@ -478,7 +479,7 @@ main {
 
 
 .run {
-    padding: 50px 8px;
+    padding-left: 16px;
     -webkit-animation: runRow 2s linear infinite; /* Safari, Chrome */
     -moz-animation: runRow 2s linear infinite;    /* Firefox */
     -ms-animation: runRow 2s linear infinite;     /* Internet Explorer */
