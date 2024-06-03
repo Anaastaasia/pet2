@@ -1658,6 +1658,7 @@ display: none;
 
 .bigLogo {
     width: 50%;
+    display: block;
 }
 
 .confid {
