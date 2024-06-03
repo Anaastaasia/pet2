@@ -347,7 +347,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 250px;
+    margin-bottom: 20px;
 }
 
 .blockOne {
@@ -463,8 +463,7 @@ main {
 .second {
     position: relative;
     overflow-x: hidden;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
 
 }
 
@@ -578,7 +577,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .third {
