@@ -353,7 +353,7 @@ main {
     display: grid;
     grid-template: 1fr 1fr / 1.5fr 0.5fr;
     gap: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 250px;
 }
 
 #oneElem1 {
