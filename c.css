@@ -347,7 +347,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .blockOne {
@@ -461,20 +460,17 @@ main {
 }
 
 .second {
-    overflow: hidden;
+    overflow-x: hidden;
 
 }
 
 .runRow {
     display: flex;
-    align-items: center;
-    margin-bottom: 30px;
 }
 
 .run {
-    padding-left: 16px;
+    padding: 50px 8px;
     animation: runRow 2s linear infinite;
-    margin-top: 30px;
 }
 
 .run__item {
@@ -508,7 +504,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
 }
 
 .third {
