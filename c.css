@@ -347,13 +347,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .blockOne {
     display: grid;
     grid-template: 1fr 1fr / 1.5fr 0.5fr;
     gap: 25px;
+    margin-bottom: 50px;
 }
 
 #oneElem1 {
