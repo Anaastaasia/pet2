@@ -468,13 +468,14 @@ main {
 .runRow {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    
     margin-bottom: 30px;
 }
 
 .run {
     padding-left: 16px;
     animation: runRow 2s linear infinite;
+    margin-top: 30px;
 }
 
 .run__item {
