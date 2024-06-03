@@ -347,13 +347,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 250px;
 }
 
 .blockOne {
     display: grid;
     grid-template: 1fr 1fr / 1.5fr 0.5fr;
     gap: 25px;
-    margin-bottom: 250px;
 }
 
 #oneElem1 {
@@ -463,7 +463,8 @@ main {
 .second {
     position: relative;
     overflow-x: hidden;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 
