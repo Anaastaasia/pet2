@@ -468,10 +468,88 @@ main {
     display: flex;
 }
 
+
+
+
+
+
+
 .run {
     padding: 50px 8px;
-    animation: runRow 2s linear infinite;
+    -webkit-animation: runRow 2s linear infinite; /* Safari, Chrome */
+    -moz-animation: runRow 2s linear infinite;    /* Firefox */
+    -ms-animation: runRow 2s linear infinite;     /* Internet Explorer */
+    -o-animation: runRow 2s linear infinite;      /* Opera */
+    animation: runRow 2s linear infinite;         /* Standard */
 }
+
+@-webkit-keyframes runRow { /* Safari, Chrome */
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@-moz-keyframes runRow { /* Firefox */
+    0% {
+        -moz-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    100% {
+        -moz-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@-ms-keyframes runRow { /* Internet Explorer */
+    0% {
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    100% {
+        -ms-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@-o-keyframes runRow { /* Opera */
+    0% {
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    100% {
+        -o-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes runRow { /* Standard */
+    0% {
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -moz-transform: translate3d(-100%, 0, 0);
+        -ms-transform: translate3d(-100%, 0, 0);
+        -o-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+
+
+
+
+
+
 
 .run__item {
     padding: clamp(0.5rem, 0.3rem + 0.4vw, 0.625rem) clamp(1.875rem, -0.125rem + 4vw, 3.125rem);/*8-10/ 30-50 для 800-1300*/
@@ -491,14 +569,7 @@ main {
     margin-right: 15px;
 }
 
-@keyframes runRow {
-    0% {
-        transform: translateZ(0);
-    }
-    100% {
-        transform: translate3d(-100%, 0, 0);
-    }
-}
+
 
 .blockThree {
     display: flex;
