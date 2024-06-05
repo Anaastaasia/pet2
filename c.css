@@ -1872,8 +1872,8 @@ display: none;
 @media (max-width: 800px)  {
 
     .blockOne {
-        grid-template-columns: 1fr; /* Один столбец */
-        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 25px;
     }    
 
