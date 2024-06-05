@@ -4,34 +4,36 @@ const block = document.querySelectorAll('.seventh__twoTabl_class')
 const blockArr = Array.from(block);
 
 blockArr.forEach(block => {
-    block.addEventListener("mouseover", () => {
-        console.log(block)
+    // Функция для добавления стилей при наведении или касании
+    const addHoverStyles = () => {
+        console.log(block);
         block.classList.add('seventh__twoTabl_class_hover');
         block.classList.remove('seventh__twoTabl_class');
 
-        const pdf = block.querySelectorAll(".pdf")
+        const pdf = block.querySelectorAll(".pdf");
         const pdfArr = Array.from(pdf);
-        
+
         pdfArr.forEach(pdf => {
-            console.log(pdf)
+            console.log(pdf);
             pdf.classList.add("pdf_hover");
             pdf.classList.remove("pdf_nohover");
         });
 
-        const text = block.querySelectorAll(".cardTexts")
+        const text = block.querySelectorAll(".cardTexts");
         const textArr = Array.from(text);
 
         textArr.forEach(text => {
-            console.log(text)
-            text.classList.add("cardText_hover")
-            text.classList.remove("cardText_nohover")
+            console.log(text);
+            text.classList.add("cardText_hover");
+            text.classList.remove("cardText_nohover");
         });
-    });
+    };
 
-    block.addEventListener("mouseout", () => {
+    // Функция для удаления стилей при уходе мыши или окончании касания
+    const removeHoverStyles = () => {
         block.classList.remove('seventh__twoTabl_class_hover');
         block.classList.add('seventh__twoTabl_class');
-        
+
         const pdf = block.querySelectorAll(".pdf");
         const pdfArr = Array.from(pdf);
 
@@ -39,16 +41,24 @@ blockArr.forEach(block => {
             pdf.classList.remove("pdf_hover");
             pdf.classList.add("pdf_nohover");
         });
-    
-        const text = block.querySelectorAll(".cardTexts")
+
+        const text = block.querySelectorAll(".cardTexts");
         const textArr = Array.from(text);
 
         textArr.forEach(text => {
             text.classList.remove("cardText_hover");
             text.classList.add("cardText_nohover");
         });
-    });
-});     
+    };
+
+    block.addEventListener("mouseover", addHoverStyles);
+    block.addEventListener("mouseout", removeHoverStyles);
+
+    block.addEventListener("touchstart", addHoverStyles, { passive: true });
+    block.addEventListener("touchend", removeHoverStyles, { passive: true });
+});
+
+
 
 document.getElementById("seventh__twoTabl_one").addEventListener("click", function() {
     var link = document.createElement("a");
