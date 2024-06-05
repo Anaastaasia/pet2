@@ -60,26 +60,26 @@ blockArr.forEach(block => {
 
 
 
-document.getElementById("seventh__twoTabl_one").addEventListener("click", function() {
-    var link = document.createElement("a");
-    link.setAttribute("href", "./img/IMG_1559.MP4");
-    link.setAttribute("download", "./img/IMG_1559.MP4");
-    link.click();
-})
+// document.getElementById("seventh__twoTabl_one").addEventListener("click", function() {
+//     var link = document.createElement("a");
+//     link.setAttribute("href", "./img/IMG_1559.MP4");
+//     link.setAttribute("download", "./img/IMG_1559.MP4");
+//     link.click();
+// })
 
-document.getElementById("seventh__twoTabl_two").addEventListener("click", function() {
-    var link = document.createElement("a");
-    link.setAttribute("href", "./img/gif1.MP4");
-    link.setAttribute("download", "./img/gif1.MP4");
-    link.click();
-})
+// document.getElementById("seventh__twoTabl_two").addEventListener("click", function() {
+//     var link = document.createElement("a");
+//     link.setAttribute("href", "./img/gif1.MP4");
+//     link.setAttribute("download", "./img/gif1.MP4");
+//     link.click();
+// })
 
-document.getElementById("seventh__twoTabl_three").addEventListener("click", function() {
-    var link = document.createElement("a");
-    link.setAttribute("href", "./img/gif2.MP4");
-    link.setAttribute("download", "./img/gif2.MP4");
-    link.click();
-})
+// document.getElementById("seventh__twoTabl_three").addEventListener("click", function() {
+//     var link = document.createElement("a");
+//     link.setAttribute("href", "./img/gif2.MP4");
+//     link.setAttribute("download", "./img/gif2.MP4");
+//     link.click();
+// })
 
 // Анимация 
 
